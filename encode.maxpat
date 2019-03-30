@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 211.0, 166.0, 1260.0, 772.0 ],
+		"rect" : [ 72.0, 107.0, 1260.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 980.75, 182.0, 29.5, 22.0 ],
+					"text" : "- 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-139",
 					"linecount" : 4,
 					"maxclass" : "comment",
@@ -58,7 +70,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1021.0, 47.0, 150.0, 51.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Press this button to do the encoding and save\nthe output file"
 				}
 
@@ -188,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 988.75, 152.0, 40.0, 22.0 ],
+					"patching_rect" : [ 987.25, 137.0, 40.0, 22.0 ],
 					"text" : "Uzi"
 				}
 
@@ -212,7 +223,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 988.75, 194.5, 40.0, 22.0 ],
+					"patching_rect" : [ 980.75, 208.5, 40.0, 22.0 ],
 					"text" : "t i i i"
 				}
 
@@ -261,7 +272,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 788.0, 17.5, 150.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Press this button to choose a file to load"
 				}
 
@@ -285,7 +295,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.75, 392.0, 150.0, 47.0 ],
+					"patching_rect" : [ 200.75, 392.0, 153.0, 47.0 ],
 					"text" : "The ASCII values of the message are stored in this table"
 				}
 
@@ -405,7 +415,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 208.5, 109.0, 47.0 ],
+					"patching_rect" : [ 489.0, 208.5, 112.0, 47.0 ],
 					"text" : "The ASCII values of your text appear here"
 				}
 
@@ -612,7 +622,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 411.0, 260.0, 190.0, 22.0 ],
-					"text" : "72 73"
+					"text" : "48"
 				}
 
 			}
@@ -639,7 +649,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 361.0, 68.0, 190.0, 22.0 ],
-					"text" : "HI"
+					"text" : "0"
 				}
 
 			}
@@ -689,7 +699,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-89", 1 ],
-					"source" : [ "obj-129", 0 ]
+					"source" : [ "obj-129", 0 ],
+					"watchpoint_flags" : 5,
+					"watchpoint_id" : 1
 				}
 
 			}
@@ -863,6 +875,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -913,14 +932,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 0 ],
-					"midpoints" : [ 1008.75, 177.0, 1147.5, 177.0 ],
+					"midpoints" : [ 1007.25, 177.0, 1147.5, 177.0 ],
 					"source" : [ "obj-98", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-88", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-98", 2 ]
 				}
 
