@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 72.0, 107.0, 1260.0, 772.0 ],
+		"rect" : [ 114.0, 191.0, 1260.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -617,12 +617,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 260.0, 190.0, 22.0 ],
-					"text" : "48"
+					"patching_rect" : [ 411.0, 260.0, 190.0, 89.0 ],
+					"text" : "73 32 97 109 32 116 104 101 32 118 101 114 121 32 109 111 100 101 108 32 111 102 32 97 32 109 111 100 101 114 110 32 109 97 106 111 114 32 103 101 110 101 114 97 108 33"
 				}
 
 			}
@@ -642,6 +643,7 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"keymode" : 1,
+					"linecount" : 2,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -649,7 +651,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 361.0, 68.0, 190.0, 22.0 ],
-					"text" : "0"
+					"text" : "I am the very model of a modern major general!"
 				}
 
 			}
@@ -699,9 +701,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-89", 1 ],
-					"source" : [ "obj-129", 0 ],
-					"watchpoint_flags" : 5,
-					"watchpoint_id" : 1
+					"source" : [ "obj-129", 0 ]
 				}
 
 			}
