@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 114.0, 191.0, 1260.0, 772.0 ],
+		"rect" : [ 2053.0, 139.0, 1260.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 361.0, 180.0, 59.0, 22.0 ],
+					"text" : "append 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
@@ -283,7 +295,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 543.5, 324.0, 64.0, 22.0 ],
+					"patching_rect" : [ 561.0, 367.0, 64.0, 22.0 ],
 					"text" : "r bit_index"
 				}
 
@@ -379,7 +391,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 613.0, 333.5, 94.0, 47.0 ],
+					"patching_rect" : [ 638.5, 372.5, 94.0, 47.0 ],
 					"text" : "Read individual bits from the table"
 				}
 
@@ -391,7 +403,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 597.0, 392.0, 150.0, 33.0 ],
+					"patching_rect" : [ 614.5, 435.0, 150.0, 33.0 ],
 					"text" : "For each bit number, get the byte and bit offset"
 				}
 
@@ -489,7 +501,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 543.5, 404.5, 39.0, 22.0 ],
+					"patching_rect" : [ 561.0, 447.5, 39.0, 22.0 ],
 					"text" : "zl.join"
 				}
 
@@ -501,7 +513,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 565.5, 371.0, 29.5, 22.0 ],
+					"patching_rect" : [ 583.0, 414.0, 29.5, 22.0 ],
 					"text" : "% 8"
 				}
 
@@ -513,7 +525,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 521.5, 371.0, 29.5, 22.0 ],
+					"patching_rect" : [ 530.25, 414.0, 29.5, 22.0 ],
 					"text" : "/ 8"
 				}
 
@@ -561,7 +573,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 361.0, 126.0, 55.0, 22.0 ],
+					"patching_rect" : [ 361.0, 106.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -622,8 +634,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 260.0, 190.0, 89.0 ],
-					"text" : "73 32 97 109 32 116 104 101 32 118 101 114 121 32 109 111 100 101 108 32 111 102 32 97 32 109 111 100 101 114 110 32 109 97 106 111 114 32 103 101 110 101 114 97 108 33"
+					"patching_rect" : [ 428.0, 257.5, 192.0, 89.0 ],
+					"text" : "85 110 102 111 114 116 117 110 97 116 101 108 121 32 116 104 101 114 101 32 105 115 32 97 32 114 97 100 105 111 32 105 110 32 109 121 32 98 114 97 105 110 0"
 				}
 
 			}
@@ -634,7 +646,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 361.0, 169.0, 40.0, 22.0 ],
+					"patching_rect" : [ 361.0, 143.0, 40.0, 22.0 ],
 					"text" : "atoi"
 				}
 
@@ -651,7 +663,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 361.0, 68.0, 190.0, 22.0 ],
-					"text" : "I am the very model of a modern major general!"
+					"text" : "Unfortunately there is a radio in my brain"
 				}
 
 			}
@@ -757,23 +769,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"midpoints" : [ 553.0, 445.0, 511.0, 445.0, 511.0, 318.0, 411.0, 318.0 ],
+					"midpoints" : [ 570.5, 445.0, 511.0, 445.0, 511.0, 361.0, 411.0, 361.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"order" : 0,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -926,6 +929,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
