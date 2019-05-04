@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 247.0, 271.0, 1082.0, 613.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,111 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-42",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 486.66668701171875, 1.5, 132.0, 51.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Click here to decode. (Watch the console!)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 196.66668701171875, 15.0, 132.0, 37.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Click here to load an audio file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 933.66668701171875, 452.33331298828125, 111.0, 33.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Stop once we read a byte of '0'"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 881.4166259765625, 297.333343505859375, 111.0, 74.0 ],
+					"presentation_linecount" : 5,
+					"text" : "Shift the bit and add it to the accumulator, flushing once the whole byte is done"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 786.4166259765625, 185.33331298828125, 108.0, 33.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Get the LSB of the sample"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 812.25, 9.333335876464844, 108.0, 74.0 ],
+					"presentation_linecount" : 5,
+					"text" : "Read a sample from the buffer according to the index of the next bit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 310.25, 255.0, 108.0, 60.0 ],
+					"presentation_linecount" : 4,
+					"text" : "This Uzi iterates through the bit indexes within each byte."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 506.0, 123.0, 120.0, 60.0 ],
+					"text" : "Each bang of the metro\nprocesses one byte/character"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "message",
@@ -329,7 +434,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 735.1666259765625, 163.33331298828125, 29.5, 22.0 ],
+					"patching_rect" : [ 735.1666259765625, 155.0, 29.5, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -390,7 +495,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 735.1666259765625, 15.333343505859375, 29.5, 22.0 ],
+					"patching_rect" : [ 735.1666259765625, 15.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -439,7 +544,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 63.0, 189.0, 256.0, 64.0 ]
+					"patching_rect" : [ 63.0, 175.0, 256.0, 64.0 ]
 				}
 
 			}
@@ -514,7 +619,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
-					"midpoints" : [ 509.75, 303.0, 645.0, 303.0, 645.0, 0.0, 755.1666259765625, 0.0 ],
+					"midpoints" : [ 509.75, 311.0, 632.0, 311.0, 632.0, 0.0, 755.1666259765625, 0.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -565,7 +670,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"midpoints" : [ 744.6666259765625, 186.0, 667.999969482421875, 186.0, 667.999969482421875, 192.0, 668.6666259765625, 192.0 ],
+					"midpoints" : [ 744.6666259765625, 182.0, 667.999969482421875, 182.0, 667.999969482421875, 192.0, 668.6666259765625, 192.0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -741,7 +846,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 466.166656494140625, 381.0, 645.0, 381.0, 645.0, 9.0, 744.6666259765625, 9.0 ],
+					"midpoints" : [ 466.166656494140625, 390.0, 648.0, 390.0, 648.0, 9.0, 744.6666259765625, 9.0 ],
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -749,7 +854,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 1 ],
-					"midpoints" : [ 476.666656494140625, 383.0, 808.0, 383.0, 808.0, 315.0, 860.6666259765625, 315.0 ],
+					"midpoints" : [ 476.666656494140625, 409.0, 808.0, 409.0, 808.0, 315.0, 860.6666259765625, 315.0 ],
 					"source" : [ "obj-46", 1 ]
 				}
 
